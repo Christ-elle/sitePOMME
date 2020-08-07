@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Design</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body {
+            
+            text-align: center;
+            /* typo taille en.em et famille, propriété raccourcie  */
+            font: 0.8em"Trebuchet MS", Helvetica, sans-serif;
+            background-color: #cf9;
+            /* border: 10px solid  orange;  */
+            /* margin: 50px;  */
+            /* margin: 10px 0 10px;  */
+            margin: 10px 0;  
+            /* Margine: haut droite bas gauche  */
+        }
+        /* L'id conteneur ici est affecté à une div de la page. La notation div#conteneur ou #conteneur est identique */
+        div#conteneur {
+            margin: 0 auto;
+            width: 800px;
+            /* background-color: orchid;  */
+            text-align: left;
+            border: 2px solid #ab4;
+            /* en hexadécimal il existe 16 millions de couleurs  */
+            /* il existe aussi des couleurs RGBA Red Green Blue Alpha joue sur l'oppacité "trensparence" de la couleur */
+             background-color: #fff;  
+           
+            background-color: rgba(red, green, blue, alpha);
+        }
+        h1#header {
+            height: 258px;
+            /* une image en arrière plan dans le css  */
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position-X: left;
+            background-position-y:top; */
+            background: url(img/apple.jpg) no-repeat left top;
+        }
+        h1#header a {
+            display: block;
+            width: 400px;
+            height: 70px;
+            background: url(img/title.gif) no-repeat;
+            /* La position de l'élément a est relative à son parent  */
+            position: relative;
+            left: 350px;
+            top: 15px;
+            /* indentation négative du texte afin de le masquer pour les visiteurs et de le laisser dans le code pour les robots ou moteurs de recherche qui indexent le site ; action de référencement naturel  */
+            text-indent: -5000px;
+        }
+        ul#menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* l'image de fond est répétée horizontalement  */
+            background: url(img/bg_menu.gif) repeat-x 0 -25px;
+            height: 35px;
+        }
+        ul#menu li{
+            float: left;
+            text-align: center;
+            
+        }
+        ul#menu li a {
+            /* l'élément, la boite et la typo  */
+            width: 130px;
+            line-height: 25px;
+            font-size: 1.2em;
+            /* epaisseur de typo bold= gras  */
+            font-weight: bold;
+            /* espacement entre les lettres  */
+            letter-spacing: 2px;
+            color: #fff;
+            display: block;
+            border-right: 2px solid #dea;
+            text-decoration: none;
+        }
+        div#contenu {
+            padding: 0 30px 0 100px;
+        }
+        ul#menu li a:hover {
+            background: url(img/bg_menu.gif)repeat-x 0 0;
+        }
+        div#contenu {
+            padding: 0 30px 0 100px;
+            /* on crée un espace à gauche et un espace en haut */
+            background: url(img/bg_page.gif) no-repeat 15px 15px;
+        }
+
+        div#contenu h2 {
+            padding-left: 25px;
+            background: url(img/little_apple.gif) no-repeat left bottom;
+            color: #9b2;
+            border-bottom: 1px solid #9b2;
+            line-height: 25px;
+            font-size: 1.4em;
+        }
+        div#contenu h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+        div#contenu p {
+            text-align: justify;
+            text-indent: 2em;
+            line-height: 1.7em;
+        }
+        div#contenu blockquote {
+            border-left: 5px solid #9b2;
+            padding-left: 10px;
+        }
+        p#footer {
+            margin: 0;
+            padding-right: 10px;
+            line-height: 30px;
+            text-align: right;
+            color: #8a0;
+        }
+            
+    </style>
+    
+</head>
+<body>
+    <!-- Le contenu principal >>> souvent nomé id="main" ou id="conteneur" ou id="container" ou id="wrapper" -->
+    <div id="conteneur">
+        <h1 id="header"><a href="#" title="Accueil-Color Design"><span>Colored Design</span></a></h1>
+        <!-- ici la navigation  -->
+        <nav>
+            <ul id="menu">
+                <li><a href="http://pommemusic.fr/" target="_blank">Pomme music</a></li>
+                <li><a href="#">Etape n°2</a></li>
+                <li><a href="#">Etape n°3</a></li>
+                <li><a href="#">Etape n°4</a></li>
+                <li><a href="#">Etape n°5</a></li>
+                
+            </ul>
+        </nav>
+        <div id="contenu">
+        <h2>Un titre</h2>
+        <!-- une seconde div pour le contenu après l'entête de la page  -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nesciunt odit nemo natus fuga laudantium, non, optio praesentium et labore sunt voluptatibus fugiat at similique temporibus dolores maxime? Quas, nisi.</p>
+        <blockquote>
+           <p>L'usufruit est une pomme qui est tombée dans l'herbe et qui pourrit, toute ratatinée et fendue, sous les pluies de novembre. Les hypothèques sont d'affreux échafaudages noirs qu'on met devant les façades des maisons. </p> 
+            
+        </blockquote>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nesciunt odit nemo natus fuga laudantium, non, optio praesentium et labore sunt voluptatibus fugiat at similique temporibus dolores maxime? Quas, nisi.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nesciunt odit nemo natus fuga laudantium, non, optio praesentium et labore sunt voluptatibus fugiat at similique temporibus dolores maxime? Quas, nisi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi recusandae fugiat alias, vitae esse, repellendus, tempora in laborum enim atque veritatis aperiam velit molestias et? Odio fugiat adipisci tempora accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos nisi vitae? Asperiores unde veritatis repudiandae molestias aliquid nulla, doloremque ut, numquam laborum culpa voluptatum a cum illum magnam vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quaerat reprehenderit dolorem ipsa. Recusandae odio provident eum, corrupti vitae, mollitia velit nulla ullam neque nostrum expedita reprehenderit alias nemo eos.</p>
+        
+        <p>Dolore alias at eligendi nam quo optio repudiandae voluptas facilis temporibus. Voluptates cumque earum quae amet nostrum odit, ab mollitia nihil incidunt est nulla veritatis aperiam ratione error fugiat dolorem.</p>
+
+        <a href="http://pommemusic.fr/" target="_blank">Chanteuse Pomme</a>
+
+        <h3>pomme d'Amour</h3>
+        
+        <p>Ipsam omnis aspernatur odio voluptatibus, exercitationem ipsa odit magnam ipsum iure soluta velit harum maxime rerum quidem nihil illo voluptatum? Ea optio doloremque dolorem nostrum repellat, recusandae cumque soluta cum!</p>
+        <!-- fermeture de main  -->
+        </div>
+    
+    <!-- Ici le pied de page avec une id"footer" que l'on trouve encore parfois en lien et place de la balise footer HTML 5  -->
+    <p id="footer">Pied de page</p>
+    </div> <!-- fermeture de conteneur  -->
+</body>
+</html>

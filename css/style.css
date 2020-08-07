@@ -1,0 +1,119 @@
+body {
+            
+    text-align: center;
+    /* typo taille en.em et famille, propriété raccourcie  */
+    font: 0.8em"Trebuchet MS", Helvetica, sans-serif;
+    background-color: #cf9;
+    /* border: 10px solid  orange;  */
+    /* margin: 50px;  */
+    /* margin: 10px 0 10px;  */
+    margin: 10px 0;  
+    /* Margine: haut droite bas gauche  */
+}
+/* L'id conteneur ici est affecté à une div de la page. La notation div#conteneur ou #conteneur est identique */
+div#conteneur {
+    margin: 0 auto;
+    width: 800px;
+    /* background-color: orchid;  */
+    text-align: left;
+    border: 2px solid #ab4;
+    /* en hexadécimal il existe 16 millions de couleurs  */
+    /* il existe aussi des couleurs RGBA Red Green Blue Alpha joue sur l'oppacité "trensparence" de la couleur */
+     background-color: #fff;  
+   
+    background-color: rgba(red, green, blue, alpha);
+}
+h1#header {
+    height: 258px;
+    /* une image en arrière plan dans le css  */
+    /* background-image: url(img/apple.jpg);
+    background-repeat: no-repeat;
+    background-position-X: left;
+    background-position-y:top; */
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin: 0;
+}
+h1#header a {
+    display: block;
+    width: 400px;
+    height: 70px;
+    background: url(../img/title.gif) no-repeat;
+    /* La position de l'élément a est relative à son parent  */
+    position: relative;
+    left: 350px;
+    top: 15px;
+    /* indentation négative du texte afin de le masquer pour les visiteurs et de le laisser dans le code pour les robots ou moteurs de recherche qui indexent le site ; action de référencement naturel  */
+    text-indent: -5000px;
+   
+}
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* l'image de fond est répétée horizontalement  */
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+    height: 35px;
+}
+ul#menu li{
+    float: left;
+    text-align: center;
+    
+}
+ul#menu li a {
+    /* l'élément, la boite et la typo  */
+    width: 130px;
+    line-height: 25px;
+    font-size: 1.2em;
+    /* epaisseur de typo bold= gras  */
+    font-weight: bold;
+    /* espacement entre les lettres  */
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    border-right: 2px solid #dea;
+    text-decoration: none;
+}
+div#contenu {
+    padding: 0 30px 0 100px;
+}
+ul#menu li a:hover {
+    background: url(../img/bg_menu.gif)repeat-x 0 0;
+}
+div#contenu {
+    padding: 0 30px 0 100px;
+    /* on crée un espace à gauche et un espace en haut */
+    background: url(../img/bg_page.gif) no-repeat 15px 15px;
+}
+
+div#contenu h2 {
+    padding-left: 25px;
+    background: url(/..img/little_apple.gif) no-repeat left bottom;
+    color: #9b2;
+    border-bottom: 1px solid #9b2;
+    line-height: 25px;
+    font-size: 1.4em;
+}
+div#contenu h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 3px solid #9b2;
+    color: #9b2;
+}
+div#contenu p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7em;
+}
+div#contenu blockquote {
+    border-left: 5px solid #9b2;
+    padding-left: 10px;
+}
+p#footer {
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}
+    

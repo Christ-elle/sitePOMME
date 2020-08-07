@@ -1,0 +1,54 @@
+body { 
+    background-color: #c4f197;
+    color: purple;
+   
+    text-align: left;
+}
+div#contenu {
+    background-color: rgb(243, 250, 184);
+}
+   
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr {
+    border: double pink 5px;
+}
+
+
+.bonbonbleu1 {
+    max-width: 250px;
+}
+
+#inline-block a {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    background-color: mistyrose;
+    color: rgb(88, 168, 8);
+    border: 2px solid pink;
+    text-decoration: none;
+}
+
+
+
+nav {
+    text-align: center;
+}
+hr {
+    border: double pink;
+}
+h2 {
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
